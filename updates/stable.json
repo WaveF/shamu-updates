@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "version": "1.3.0",
   "channel": "stable",
-  "notes": "## Shamu 1.3.0\n\n- 新增关于页内的在线更新界面。\n- 启动后延迟检查更新，并每 24 小时检查一次；也可随时手动检查。\n- 更新包使用 Ed25519 签名，下载后校验通过才安装。\n- 更新完成后重启生效；配置、授权和 MCP 状态保留。\n- Windows 使用 exe 原地替换；macOS 替换 `.app` bundle。\n- 修复 Windows MCP 项目路径标题推断问题。\n\n\u003e macOS 仍未使用 Developer ID / 公证；如 Gatekeeper 拦截，请从发布页手动下载覆盖。\n",
-  "publishedAt": "2026-11-08T15:22:27Z",
+  "notes": "## Shamu 1.3.0\n\n- 新增关于页内的在线更新界面。\n- 启动后延迟检查更新，并每 24 小时检查一次；也可随时手动检查。\n- 更新包使用 Ed25519 签名，下载后校验通过才安装。\n- 更新完成后重启生效；配置、授权和 MCP 状态保留。\n- Windows 使用 exe 原地替换；macOS 替换 `.app` bundle。\n- Windows 同时提供 ARM64 与 x64 安装包/更新产物。\n- 修复 Windows MCP 项目路径标题推断问题。\n\n\u003e macOS 仍未使用 Developer ID / 公证；如 Gatekeeper 拦截，请从发布页手动下载覆盖。\n",
+  "publishedAt": "2026-11-08T15:49:00Z",
   "artifacts": [
     {
       "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.3.0/Shamu-1.3.0-darwin-arm64.zip",
@@ -14,6 +14,16 @@
       "digest": "W6/85ZJ8mFydJXA6oAAF1esV48VgN/toUaYLc64k6S5hxk+RPM79msNLYaREOm6Y+y63qPfTfIDVyVgqmQ721w==",
       "signatureAlgo": "ed25519ph",
       "signature": "KY4EeHILXO8BAm3i6eo1ViO919okh7XGLKmu4TqfY7SmWNxLk0PIsBpA2PqfBEVorqHsWSN7bvcs8fwDkiXICw=="
+    },
+    {
+      "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.3.0/Shamu-1.3.0-windows-amd64.exe",
+      "platform": "windows",
+      "arch": "amd64",
+      "size": 14651904,
+      "digestAlgo": "sha512",
+      "digest": "2bNWmbRf66RgYYeDKePzGGZsWSh5+GjZX+21rKvMq92XdO4CVosaUlFdxNw11gzq06UZ4qsYULFmmsEuF60Mug==",
+      "signatureAlgo": "ed25519ph",
+      "signature": "Z4+xfbzlYLys2Du8PKxYzO8e0jJprpItNAIsLxxM11De98NFgoZl+3tCrv5YjTw3rDyXA4mbNp4rax3s7Y75AA=="
     },
     {
       "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.3.0/Shamu-1.3.0-windows-arm64.exe",
