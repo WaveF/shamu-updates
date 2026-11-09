@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
-  "version": "1.3.0",
+  "version": "1.4.2",
   "channel": "stable",
-  "notes": "## Shamu 1.3.0\n\n- 新增关于页内的在线更新界面。\n- 启动后延迟检查更新，并每 24 小时检查一次；也可随时手动检查。\n- 更新包使用 Ed25519 签名，下载后校验通过才安装。\n- 更新完成后重启生效；配置、授权和 MCP 状态保留。\n- Windows 使用 exe 原地替换；macOS 替换 `.app` bundle。\n- Windows 同时提供 ARM64 与 x64 安装包/更新产物。\n- 修复 Windows MCP 项目路径标题推断问题。\n\n\u003e macOS 仍未使用 Developer ID / 公证；如 Gatekeeper 拦截，请从发布页手动下载覆盖。\n",
-  "publishedAt": "2026-11-08T15:49:00Z",
+  "notes": "# Shamu 1.4.2\n\n- 设置窗口改为即时生效，不再需要「应用修改」「保存」按钮。\n- 启动命令名称可直接编辑；星标只标记默认命令，默认命令不允许删除。\n- 默认命令可以留空，留空时点击启动按钮会提示未设置命令。\n- MCP 命令名优先使用「启动」/「Start」，名称限制 20 个字符；MCP instructions / schema 明确限制，后端同步校验。\n- MCP 命令建议在开头打印项目名分隔块，并尽量设置终端标题，方便区分多个项目的终端。\n- 修复拖动项目卡片释放后回到原位置的动画。\n- 左下角 MCP 卡片完整显示 `127.0.0.1:52501`，与配置 JSON 一致。\n- MCP 配置弹窗新增「重启 MCP」；「复制」改为「复制给 AI」；JSON 可手动选中复制但保持只读。\n- 命令下拉选单中的长名称单行显示，超出宽度用省略号。\n- 新增 Linux x64 / ARM64 安装包（Wails purego）。\n",
+  "publishedAt": "2026-11-09T02:34:43Z",
   "artifacts": [
     {
-      "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.3.0/Shamu-1.3.0-darwin-arm64.zip",
+      "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.4.2/Shamu-1.4.2-darwin-arm64.zip",
       "platform": "darwin",
       "arch": "arm64",
-      "size": 5090431,
+      "size": 9685990,
       "digestAlgo": "sha512",
-      "digest": "W6/85ZJ8mFydJXA6oAAF1esV48VgN/toUaYLc64k6S5hxk+RPM79msNLYaREOm6Y+y63qPfTfIDVyVgqmQ721w==",
+      "digest": "eU2km1gC4dp9ByNfoYhmVlFbMj5/6L74cNobVSn5YrFUVa2Nq0ESIyoZwhvwu09sTtl5ThsfmbkW2Zvf80xE8A==",
       "signatureAlgo": "ed25519ph",
-      "signature": "KY4EeHILXO8BAm3i6eo1ViO919okh7XGLKmu4TqfY7SmWNxLk0PIsBpA2PqfBEVorqHsWSN7bvcs8fwDkiXICw=="
+      "signature": "nvPihRzelM1cMGkn4XMQFIhLilUWXN7lPhZfsyBF4g5gKau+a1sbHwQnP2wrZxnV3d8//TkMM3wEdGeShtxECQ=="
     },
     {
-      "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.3.0/Shamu-1.3.0-windows-amd64.exe",
+      "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.4.2/Shamu-1.4.2-windows-amd64.exe",
       "platform": "windows",
       "arch": "amd64",
-      "size": 14651904,
+      "size": 14666752,
       "digestAlgo": "sha512",
-      "digest": "2bNWmbRf66RgYYeDKePzGGZsWSh5+GjZX+21rKvMq92XdO4CVosaUlFdxNw11gzq06UZ4qsYULFmmsEuF60Mug==",
+      "digest": "JVwvwOOokHeIxQ4DwGx9n3nToOdlR810Ul3aUsmQTv3QVF0ArNZpwW4XMgVA01QPV499FIsHWWJPDhe0Sd6pKg==",
       "signatureAlgo": "ed25519ph",
-      "signature": "Z4+xfbzlYLys2Du8PKxYzO8e0jJprpItNAIsLxxM11De98NFgoZl+3tCrv5YjTw3rDyXA4mbNp4rax3s7Y75AA=="
+      "signature": "hb3goNTowvJzySbahp362m42JhLQ9m4UGEI+p21wL5LkhVv1jIEL9jGf4a307wj3FQxFQg//Fg48TCW0Mq4WAg=="
     },
     {
-      "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.3.0/Shamu-1.3.0-windows-arm64.exe",
+      "url": "https://github.com/WaveF/shamu-updates/releases/download/v1.4.2/Shamu-1.4.2-windows-arm64.exe",
       "platform": "windows",
       "arch": "arm64",
-      "size": 13624320,
+      "size": 13639680,
       "digestAlgo": "sha512",
-      "digest": "yyw5eYLqyxj7Ute7ow/BNKofu1JpYGlDTZNVCisWA9tT/OmbyPQZjn6Bzrb3hzs71amaXL9b+m8uvU+apdUKHA==",
+      "digest": "jRcFtLybiSsGs5oOEyTzWEAUog5mg/9hp1Fb8yOLa4bOdCz2Atcj6dPZpQRrKVetRw/uUagM8IaTl604QhiX6A==",
       "signatureAlgo": "ed25519ph",
-      "signature": "oltwtja6AJZAYxhMISlgM/Y8DHCBWxzpQs5i7A30bIlq1Mzbo19PaUzjEeq+AHaRxrC5guXn9xywcJ4PQ/F/Bg=="
+      "signature": "sAkDwbPQ3EHC4tJg5fZQljfNbE60Cg5IYgHBuUQ7lIBVSzTbIqK69QmFO9ibE8IBN/IXj56fy66HbYPtuRWzCg=="
     }
   ]
 }
